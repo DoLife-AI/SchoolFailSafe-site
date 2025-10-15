@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: How it works
+  link: /how-it-works/
+- name: Pricing
+  link: /pricing/
+- name: SMS Terms
+  link: /sms-terms/
+- name: Privacy
+  link: /privacy/
+- name: Get started
+  link: https://app.schoolfailsafe.com/wizard/
