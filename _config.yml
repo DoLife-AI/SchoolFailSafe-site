@@ -1,0 +1,8 @@
+title: School Failsafe
+description: Never miss a must-do from school again.
+url: https://schoolfailsafe.com
+theme: null
+remote_theme: chrisrhymes/bulma-clean-theme
+plugins:
+  - jekyll-remote-theme
+navbar_fixed: true
