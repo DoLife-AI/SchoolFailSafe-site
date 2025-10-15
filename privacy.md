@@ -77,5 +77,5 @@ We may update this policy from time to time. We will post changes here and updat
 
 ## Contact Us
 **DoLife AI, LLC**  
-Email: [support@schoolfailsafe.com](mailto:support@schoolfailsafe.com)  
-Mailing address: _Add your business mailing address here._
+Email: [stephen@schoolfailsafe.com](mailto:stephen@schoolfailsafe.com)  
+
