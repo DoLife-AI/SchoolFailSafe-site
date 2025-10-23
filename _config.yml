@@ -1,9 +1,57 @@
-remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
-title: School Failsafe
-description: Never miss a must-do from school again.
-url: https://schoolfailsafe.com
-theme: null
-remote_theme: chrisrhymes/bulma-clean-theme
+# ========================================
+# School FailSafe — GitHub Pages config
+# Safe build: no remote_theme, no Sass/SCSS
+# ========================================
+
+# ---- Site basics
+title: School FailSafe
+description: Turn school emails into text alerts with one-tap “Add to Calendar.”
+url: https://www.schoolfailsafe.com
+baseurl: ""     # leave empty for apex/www
+
+# ---- Use a built-in theme (no remote_theme)
+# You can switch to jekyll-theme-cayman or primer later if you prefer.
+theme: jekyll-theme-minimal
+
+# ---- Markdown / permalinks
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+
+# ---- Plugins that are allowed on GitHub Pages
 plugins:
-  - jekyll-remote-theme
-navbar_fixed: true
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-include-cache
+
+# ---- Defaults: apply a layout to all Markdown pages
+defaults:
+  - scope:
+      path: ""      # all files
+      type: "pages"
+    values:
+      layout: default
+
+# ---- Exclude anything that was breaking the build (Sass, tooling, etc.)
+# If you *do* have assets/css/app.scss (even if you don’t see it), this prevents Jekyll from compiling it.
+exclude:
+  - assets/css/app.scss
+  - node_modules
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# ---- Include (usually not needed, but here for completeness)
+include:
+  - CNAME
+
+# ---- Sitemap config (optional but nice)
+sitemap:
+  exclude:
+    - /assets/
